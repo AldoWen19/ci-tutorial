@@ -8,4 +8,15 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function kami(): string
+    {
+        return "BARCELONA (MES QUE UN CLUB)";
+    }
+
+    public function kontak(): string
+    {
+        return "HALLO OM INI DARI KONTAK";
+    }
+    
 }
