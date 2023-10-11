@@ -14,9 +14,17 @@ class Home extends BaseController
         return "BARCELONA (MES QUE UN CLUB)";
     }
 
-    public function kontak(): string
+    public function contact(): string
     {
         return "HALLO OM INI DARI KONTAK";
     }
     
+    public function about(): string
+    {
+        return "HALLO OM INI DARI About";
+    }
+    
 }
+
+
+

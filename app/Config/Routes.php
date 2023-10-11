@@ -11,9 +11,10 @@ $routes->get('/contact', 'Home::contact');
 
 
 $routes->get('/', 'Pages::index');
-$routes->get('/about/contact', 'about::contact');
+$routes->get('/about', 'About::contact');
 $routes->get('/about/contact/(:any)/(:num)', 'about::contact/$1/$2');
-$routes->get('/about/(:any)/(:num)', 'about::contact/$1/$2');
+$routes->get('/about/contact', 'About::contact');
+$routes->get('/about/contact/(:alpha)/(:num)', 'About::contact/$2/$1');
 
 
 
